@@ -1,21 +1,20 @@
 import * as firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA6h2eGYeTj74skv20hjjSh_Ohoj23VQuo",
-  authDomain: "expensify-69dfd.firebaseapp.com",
-  databaseURL: "https://expensify-69dfd-default-rtdb.firebaseio.com",
-  projectId: "expensify-69dfd",
-  storageBucket: "expensify-69dfd.appspot.com",
-  messagingSenderId: "226844585827",
-  appId: "1:226844585827:web:312fce0f0aaefa7ce26d56"
+  apiKey: 'AIzaSyA6h2eGYeTj74skv20hjjSh_Ohoj23VQuo',
+  authDomain: 'expensify-69dfd.firebaseapp.com',
+  databaseURL: 'https://expensify-69dfd-default-rtdb.firebaseio.com',
+  projectId: 'expensify-69dfd',
+  storageBucket: 'expensify-69dfd.appspot.com',
+  messagingSenderId: '226844585827',
+  appId: '1:226844585827:web:312fce0f0aaefa7ce26d56',
 };
 
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-
-export {firebase, googleAuthProvider, database as default};
+export { firebase, googleAuthProvider, database as default };
 
 // database.ref('expenses').on('value', (snapshot)=>{
 //   const expenses = [];
@@ -50,7 +49,6 @@ export {firebase, googleAuthProvider, database as default};
 //   createdAt: 500
 // });
 
-
 // const onValueChange = database.ref().on('value', (snapshot)=>{
 //   const val = snapshot.val();
 //   console.log(`${val.name} is a ${val.job.title} in ${val.job.company}`);
@@ -64,8 +62,7 @@ export {firebase, googleAuthProvider, database as default};
 //   'job/company': 'jotform'
 // });
 
-
- //database.ref().off('value', onValueChange);
+//database.ref().off('value', onValueChange);
 // database.ref().once('value')
 // .then((snapshot)=>{
 //   const val = snapshot.val();
